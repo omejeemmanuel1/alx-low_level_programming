@@ -1,12 +1,11 @@
-/*omejeemanuel1 */
-
+/* omejeemmanuel1 */
 #include <stdio.h>
-
 /**
 * main - Entry point
 *
-* Result: Always 0 (success)
+* Return: Always 0 (success)
 **/
+
 int main(void)
 {
 	int digit1, digit2;
@@ -24,10 +23,6 @@ for (digit1 = 0; digit1 < 9; digit1++)
 		putchar(' ');
 	}
 }
-
-	putchar('\n');
-
-	return (0);
-
+putchar('\n');
+return (0);
 }
-
