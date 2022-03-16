@@ -2,24 +2,23 @@
 #include <time.h>
 #include <stdlib.h>
 /**
-* main - main block
-* Description: Get a random number and print the number
-* and if it is positive, negative, or zero
+* positive_or_negative - Test function that prints if integer
+*				is positive or negative
+* @i:Random time variable
 * Return: 0
 **/
-int positive_or_negative()
+int positive_or_negative(int i)
 {
-	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+	i = rand() - RAND_MAX / 2;
 
-	if (n > 0)
-		printf("%i is positive\n", n);
-	else if (n < 0)
-		printf("%i is negative\n", n);
+	if (i > 0)
+		printf("%i is positive\n", i);
+	else if (i < 0)
+		printf("%i is negative\n", i);
 	else
-		printf("%i is zero\n", n);
+		printf("%i is zero\n", i);
 
 	return (0);
 }
