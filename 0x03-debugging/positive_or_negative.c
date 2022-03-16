@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include "main.h"
 /**
 * positive_or_negative - Test function that prints if integer
 *				is positive or negative
 * @i:Random time variable
 * Return: 0
 **/
-int positive_or_negative(int i)
+void positive_or_negative(int i)
 {
-
 	srand(time(0));
 	i = rand() - RAND_MAX / 2;
 
