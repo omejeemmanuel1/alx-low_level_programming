@@ -2,23 +2,23 @@
 
 /**
 * rot13 - rotate characters 13 places in the alphabet
-* @s: string
-* Return: string `s` rotated
+* @s: the string to encode
+*
+* Description: Each letter is replaced with the 13th letter after it.
+* Return: pointer to the encoded string
 */
-
 char *rot13(char *s)
 {
-	int i;
-	char storeh[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char storel[] = "nopqrstuvwxyzabcdefghijklm";
+	char *c;
+	char shift;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (c = s; *c; ++c)
 	{
-		if ((s[i] > 64 && s[i] < 91) || (s[i] > 96 && s[i] < 123))
-		{
-			s[i] = (s[i] - 65 > 25) ?
-				storel[s[i] - 97] : storeh[s[i] - 65];
-		}
+		shift = 'A' + (*c & 32);
+		if (('a' <= *c && *c <= 'z') || ('A' <= *c && *c <= 'Z'))
+			*c = (*c - shift + 13) % 26 + shift;
 	}
+
 	return (s);
 }
+
