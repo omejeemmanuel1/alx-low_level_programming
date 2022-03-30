@@ -27,6 +27,7 @@ unsigned int _strlen(char *s)
  * otherwise an integer greater than 0 if s1 is greater than s2.
  *
  */
+char _strncmp(char *s1, char *s2, unsigned int n)
 {
 	if (!n)
 		return (0);
