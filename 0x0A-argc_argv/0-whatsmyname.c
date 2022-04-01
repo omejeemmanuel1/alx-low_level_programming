@@ -17,6 +17,7 @@ void _puts(char *str)
 /**
  * main - print the name of the program
  * @argc: size of the argument vector
+ * @argv: number of arrays in argc
  *
  * Return: Always 0
  */
