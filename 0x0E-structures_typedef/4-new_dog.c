@@ -70,7 +70,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 	}
 	else
-		d->owner = NULL
+		d->owner = NULL;
 
 	return (d);
 }
