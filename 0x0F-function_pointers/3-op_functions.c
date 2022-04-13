@@ -62,4 +62,5 @@ int op_mod(int a, int b)
 		puts("Error");
 		exit(100);
 	}
+	return (a % b);
 }
