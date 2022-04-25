@@ -14,7 +14,7 @@
 size_t free_listint_safe(listint_t **head)
 {
 	listptr_t *listptr_head = NULL;
-    listint_t *next;
+	listint_t *next;
 	size_t size;
 
 	if (!head)
