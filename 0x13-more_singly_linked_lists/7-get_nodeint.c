@@ -6,7 +6,7 @@
  * @index: the index of the desired node (starting at 0)
  *
  * Return: If the node does not exist, return NULL. Otherwise, return a pointer
- * to the requested node.
+ * to this requested node.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
