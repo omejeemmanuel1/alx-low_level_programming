@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeptr - add an element at the beginning of a list of pointers
+ * add_nodeptr - add an element at the beginning of a list of pointer
  * @head: a pointer to a pointer to the first node
  * @p: the element to add
  *
