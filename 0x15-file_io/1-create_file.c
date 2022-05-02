@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #include "main.h"
+=======
+#include "holberton.h"
+>>>>>>> aea4906c31e349a3ed8f3721ff70788735773668
 
 /**
  * _strlen - compute the length of a NULL-terminated string
